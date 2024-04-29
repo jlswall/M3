@@ -1,2 +1,2 @@
 # M3
-code for M3 R package
+This repository contains the code for the M3 R package.
