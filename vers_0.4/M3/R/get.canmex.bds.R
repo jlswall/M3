@@ -19,25 +19,28 @@
 # REVISION HISTORY:
 #   Original release: Jenise Swall, 2012-01-11
 #
-#   2024-06-04 (JLS): Updated code formatting.
+#   2024-06-06 (JLS): Updated code formatting.  Changed argument in
+#   call to map() from "region" to "regions", which is the correct
+#   argument name.  Specified that calls to na.omit() and dist() are to be made
+#   to those functions in the "stats" package.
 # ###########################################################
 get.canmex.bds <- function(){
 
   # Get maps of Canada, USA, Mexico.
-  canusmex <- map("world", region=c("Canada", "USA", "Mexico"), exact=F,
+  canusmex <- map("world", regions=c("Canada", "USA", "Mexico"), exact=F,
                   resolution=0, plot=F)
   canusmex.lonlat <- cbind(canusmex$x, canusmex$y)
   rm(canusmex)
 
   # Get map of just USA.
-  us <- map("world", region="USA", exact=F, resolution=0, plot=F)
+  us <- map("world", regions="USA", exact=F, resolution=0, plot=F)
   us.lonlat <- cbind(us$x, us$y)
   rm(us)
 
   # See if we can find which ones are duplicated.  These are the
   # borders of the US, and we'll want to delete them.
   # Remove NAs from us.lonlat.
-  us.lonlat.noNA <- na.omit(us.lonlat)
+  us.lonlat.noNA <- stat::na.omit(us.lonlat)
   rm (us.lonlat)
   
 
@@ -45,7 +48,7 @@ get.canmex.bds <- function(){
   # look at the subset of the matrix giving the distances between the
   # US boundaries (us.lonlat.noNA) and the boundary lines for Canada,
   # US, and Mexico.
-  dist.mat <- as.matrix(dist(
+  dist.mat <- as.matrix(stat::dist(
     rbind(us.lonlat.noNA, canusmex.lonlat)))[1:nrow(us.lonlat.noNA),
           (nrow(us.lonlat.noNA)+1):(nrow(us.lonlat.noNA)+nrow(canusmex.lonlat))]
   

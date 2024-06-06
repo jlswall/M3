@@ -8,3 +8,6 @@ import(
   maps,
   mapdata
 )
+
+# Import functions na.omit() and dist() from "stats" package.
+importFrom("stats", "dist", "na.omit")
