@@ -14,7 +14,7 @@
 #     in previous R packages supplied by Battelle.
 #
 # RETURNS: String describing model projection, which can be utilized
-#   by the rgdal package in R (for projections to and from
+#   by the sf package in R (for projections to and from
 #   longitude/latitude, for example).
 #
 # ASSUMES:
@@ -39,7 +39,7 @@
 # REVISION HISTORY:
 #   Original release: Jenise Swall, 2011-06-02
 #
-#    2024-06-04 (JLS): Updated code formatting and reference websites in
+#    2024-06-06 (JLS): Updated code formatting and reference websites in
 #      the NOTES section above.
 # ###########################################################
 get.proj.info.M3 <- function(file, earth.radius=6370000){
@@ -155,7 +155,7 @@ get.proj.info.M3 <- function(file, earth.radius=6370000){
   rm(nc)
 
 
-  # Return the string which can be passed to project() and other
-  # functions in R package rgdal.
+  # Return the string which can be passed to sf_project() and other
+  # similar functions in R package sf.
   return(proj.string)
 }
