@@ -40,7 +40,7 @@ get.canmex.bds <- function(){
   # See if we can find which ones are duplicated.  These are the
   # borders of the US, and we'll want to delete them.
   # Remove NAs from us.lonlat.
-  us.lonlat.noNA <- stat::na.omit(us.lonlat)
+  us.lonlat.noNA <- stats::na.omit(us.lonlat)
   rm (us.lonlat)
   
 
@@ -48,7 +48,7 @@ get.canmex.bds <- function(){
   # look at the subset of the matrix giving the distances between the
   # US boundaries (us.lonlat.noNA) and the boundary lines for Canada,
   # US, and Mexico.
-  dist.mat <- as.matrix(stat::dist(
+  dist.mat <- as.matrix(stats::dist(
     rbind(us.lonlat.noNA, canusmex.lonlat)))[1:nrow(us.lonlat.noNA),
           (nrow(us.lonlat.noNA)+1):(nrow(us.lonlat.noNA)+nrow(canusmex.lonlat))]
   
