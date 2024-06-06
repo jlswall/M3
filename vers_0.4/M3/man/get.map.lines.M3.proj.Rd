@@ -41,9 +41,8 @@ get.map.lines.M3.proj(file, database = "state", units, ...)
   packages to get the appropriate map boundary lines (for states,
   countries, etc.), \pkg{ncdf4} to read the projection information from
   the Models3-formatted file (using a call to function
-  \code{get.proj.info.M3}), and \pkg{rgdal} (which is an interface to
-  GDAL (Geospatial Data Abstraction Library, \url{http://www.gdal.org})
-  to project the boundary lines to the specified projection.
+  \code{get.proj.info.M3}), and \pkg{sf} to project the boundary lines to the
+  specified projection.
 }
 
 
@@ -51,10 +50,6 @@ get.map.lines.M3.proj(file, database = "state", units, ...)
   kilometers or meters (depending on value of units.km).  This is a
   matrix, with x-coordinates in the first column and y-coordinates in
   the second column.
-}
-
-
-\references{\url{http://www.gdal.org}
 }
 
 
@@ -67,7 +62,7 @@ get.map.lines.M3.proj(file, database = "state", units, ...)
 
 
 \seealso{\code{\link{get.proj.info.M3}}, \code{\link[maps]{map}},
-  \code{\link[rgdal]{project}}, \code{\link{get.canusamex.bds}}
+  \code{\link[sf]{sf_project}}, \code{\link{get.canusamex.bds}}
 }
 
 

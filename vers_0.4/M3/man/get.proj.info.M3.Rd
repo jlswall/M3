@@ -5,7 +5,7 @@
 
 \description{Obtain information about the projection used by in the
   Models3-formatted file.  Build a string describing the projection
-  which can be used by the R package rgdal.
+  which can be used by the R package sf.
 }
 
 
@@ -41,14 +41,14 @@
 
 
 \value{String describing model projection, which can be utilized by
-  the \pkg{rgdal} package (for projections to and from
+  the \pkg{sf} package (for projections to and from
   longitude/latitude, for example).
 }
 
   
 \references{See information about the meaning of Models3 I/O API
   projection arguments at \cr
-  \url{http://www.baronams.com/products/ioapi/GRIDS.html}.
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/GRIDS.html}.
 }
 
 
@@ -60,10 +60,8 @@
   is built on netCDF \cr
   (\url{http://www.unidata.ucar.edu/software/netcdf}). \cr
   The string that is returned by this function is appropriate for
-  interface with GDAL (Geospatial Data Abstraction Library,
-  \url{http://www.gdal.org}) through package \pkg{rgdal}.  Usually,
-  the user will not call this function directly; instead, it will be
-  called by other functions in this package.
+  use with package \pkg{sf}.  Usually, the user will not call this function
+  directly; instead, it will be called by other functions in this package.
 }
 
 

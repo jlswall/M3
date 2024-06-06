@@ -41,8 +41,7 @@ project.M3.1.to.M3.2(x, y, from.file, to.file, units, ...)
 \details{This function calls \code{get.proj.info.M3} which reads
   the projection information (using the package \pkg{ncdf4}) and
   transforms it to strings that are understood by functions in
-  \pkg{rgdal}. Package \pkg{rgdal} provides the R interface to GDAL
-  (Geospatial Data Abstraction Library, \url{http://www.gdal.org}).
+  \pkg{sf}.
 }
 
 
@@ -51,10 +50,6 @@ project.M3.1.to.M3.2(x, y, from.file, to.file, units, ...)
   projection in \code{to.file}.  The element \code{units} contains
   the units of the coordinates, which are the same as those specified
   for input \code{x} and \code{y}.
-}
-
-
-\references{\url{http://www.gdal.org}
 }
 
 

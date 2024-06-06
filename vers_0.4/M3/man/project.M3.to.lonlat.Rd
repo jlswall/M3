@@ -33,11 +33,9 @@ project.M3.to.lonlat(x, y, file, units, ...)
 }
 
 
-\details{This function uses the function \code{\link[rgdal]{project}}
-  from the package \pkg{rgdal} to project to longitude/latitude given
-  the projection defined by the Models3-formatted file.  Package
-  \pkg{rgdal} provides the R interface to GDAL (Geospatial Data
-  Abstraction Library, \url{http://www.gdal.org}).
+\details{This function uses the function \code{\link[sf]{sf_project}}
+  from the package \pkg{sf} to project to longitude/latitude given
+  the projection defined by the Models3-formatted file.
 }
 
 
@@ -46,10 +44,6 @@ project.M3.to.lonlat(x, y, file, units, ...)
   longitude/latitude.  The element \code{units} contains the string
   "deg" to designate that \code{coords} is in degrees of
   longitude/latitude.
-}
-
-
-\references{\url{http://www.gdal.org}
 }
 
 

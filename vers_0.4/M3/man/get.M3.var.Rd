@@ -96,8 +96,8 @@ get.M3.var(file, var, lcol, ucol, lrow, urow, llay, ulay,
 
 
 \references{
-  \url{http://www.baronams.com/products/ioapi/VBLE.html}, \cr
-  \url{http://www.baronams.com/products/ioapi/DATETIME.html}
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/VBLE.html}, \cr
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/DATETIME.html}
 }
 
 
@@ -107,12 +107,7 @@ get.M3.var(file, var, lcol, ucol, lrow, urow, llay, ulay,
 \note{This function relies on the R package \pkg{ncdf4} to read
   information from Models3-formatted files, since the Models3 format
   is built on netCDF \cr
-  (\url{http://www.unidata.ucar.edu/software/netcdf}). \cr
-  It also relies on the \pkg{rgdal} interface with GDAL
-  (Geospatial Data Abstraction Library,\cr
-  \url{http://www.gdal.org}) to
-  obtain the x,y-coordinates of the grid cell centers on the
-  projection.
+  (\url{http://www.unidata.ucar.edu/software/netcdf}).
 }
 
 
