@@ -1,12 +1,12 @@
 Package: M3
 Type: Package
-Title: Reading M3 files
+Title: Reading M3 Files
 Version: 0.4
 Date: 2024-06-06
 Author: Jenise Swall <jswall@vcu.edu>
 Maintainer: Jenise Swall <jswall@vcu.edu>
 Depends: ncdf4,sf,maps,mapdata
 Imports: stats
-Description: This package contains functions to read in and manipulate air quality model output from Models3-formatted files.  This format is used by the Community Multiscale Air Quaility (CMAQ) model. 
+Description: Provides functions to read in and manipulate air quality model output from Models3-formatted files.  This format is used by the Community Multiscale Air Quality (CMAQ) model. 
 License: Unlimited
 LazyLoad: yes
