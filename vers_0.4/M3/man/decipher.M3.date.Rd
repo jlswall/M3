@@ -33,7 +33,7 @@ decipher.M3.date(M3.date)
 
 \note{For more information about M3 date-time conventions,
   see \cr
-  \url{http://www.baronams.com/products/ioapi/DATETIME.html}. \cr
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/DATETIME.html}. \cr
   This function is called by function \code{\link{get.datetime.seq}},
   but it will probably not be called by most users.
 }

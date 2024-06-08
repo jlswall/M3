@@ -54,7 +54,7 @@ get.datetime.seq(file)
   but these negative time steps will NOT be handled properly by this
   function.  For more information about Models3 date-time
   conventions, see \cr
-  \url{http://www.baronams.com/products/ioapi/DATETIME.html}.
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/DATETIME.html}.
 }
 
 
