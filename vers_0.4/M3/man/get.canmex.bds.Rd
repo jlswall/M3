@@ -53,7 +53,6 @@ map("state", add=TRUE, col="blue")
 ## Instead, we get Canadian/Mexican boundaries, excluding the borders
 ## with the US.  We overlay this onto our region, and then plot the
 ## US states.
-X11()
 plot(c(-82,-67), c(39,49), type="n", xlab="Longitude", ylab="Latitude")
 lines(get.canmex.bds())
 map("state", add=TRUE, col="blue")
