@@ -107,7 +107,7 @@ get.M3.var(file, var, lcol, ucol, lrow, urow, llay, ulay,
 \note{This function relies on the R package \pkg{ncdf4} to read
   information from Models3-formatted files, since the Models3 format
   is built on netCDF \cr
-  (\url{http://www.unidata.ucar.edu/software/netcdf}).
+  (\url{https://www.unidata.ucar.edu/software/netcdf/}).
 }
 
 

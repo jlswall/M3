@@ -8,7 +8,7 @@
   files in Models3 format
 }
 
-\description{This package contains functions to read in and manipulate
+\description{Provides functions to read in and manipulate
   air quality model output from Models3-formatted files.  This format is
   used by the Community Multiscale Air Quaility (CMAQ) model. 
 }
@@ -16,7 +16,7 @@
 
 \references{For detailed information about the format and conventions of
   the Models3 format, see \cr
-  \url{http://www.baronams.com/products/ioapi}.
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/AA.html}.
 }
 
 

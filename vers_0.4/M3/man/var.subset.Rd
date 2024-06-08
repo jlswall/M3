@@ -64,8 +64,8 @@ var.subset(var.info, llx, urx, lly, ury, ldatetime, udatetime,
 }
 
 
-\references{\url{http://www.baronams.com/products/ioapi/VBLE.html}, \cr
-  \url{http://www.baronams.com/products/ioapi/DATETIME.html}
+\references{\url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/VBLE.html}, \cr
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/DATETIME.html}
 }
 
 

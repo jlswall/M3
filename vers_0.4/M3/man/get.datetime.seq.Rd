@@ -25,7 +25,7 @@ get.datetime.seq(file)
 \details{This function relies on the R package \pkg{ncdf4} to read
   information from Models3-formatted files, since the Models3 format
   is built on netCDF \cr
-  (\url{http://www.unidata.ucar.edu/software/netcdf}).
+  (\url{https://www.unidata.ucar.edu/software/netcdf/}).
 
 }
 
@@ -37,7 +37,7 @@ get.datetime.seq(file)
 
 \references{Information about the Models3 date-time conventions is
   available at \cr
-  \url{http://www.baronams.com/products/ioapi/DATETIME.html}.
+  \url{https://www.cmascenter.org/ioapi/documentation/all_versions/html/DATETIME.html}.
 }
 
 
