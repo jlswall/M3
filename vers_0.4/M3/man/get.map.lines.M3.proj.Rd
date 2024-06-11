@@ -62,7 +62,7 @@ get.map.lines.M3.proj(file, database = "state", units, ...)
 
 
 \seealso{\code{\link{get.proj.info.M3}}, \code{\link[maps]{map}},
-  \code{\link[sf]{sf_project}}, \code{\link{get.canusamex.bds}}
+  \code{\link[sf]{sf_project}}
 }
 
 
@@ -92,6 +92,6 @@ image(subset.elev$x.cell.ctr, subset.elev$y.cell.ctr,
 
 ## Superimpose Mexico, US, and Candadian national borders on the plot,
 ## along with state borders.
-canusamex.bds <- get.map.lines.M3.proj(file=polar.file, "canusamex")$coords
-lines(canusamex.bds)
+canusamex.borders <- get.map.lines.M3.proj(file=polar.file, "canusamex")$coords
+lines(canusamex.borders)
 }

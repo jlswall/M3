@@ -26,7 +26,7 @@
 # 
 # ASSUMES:
 #   Availability of R packages maps, mapdata, and ncdf4.  Also uses
-#     function get.canusamex.bds in this package.
+#     pre-compiled data canusamex_bds included with this package.
 #
 #
 # NOTE: The model projection units are of the sort derived in the
@@ -41,16 +41,18 @@
 #     "database" for compatibility with the map() function in the "maps"
 #     package.
 #
-#   2012-05-15 (JLS): Changed option "canmex" to "canusmex" and added
+#   2012-05-15 (JLS): Changed option "canmex" to "canusamex" and added
 #     option "WorldHires".  Both of these use the high-resolution
 #     database in package "mapdata" to get better national boundardies
 #     (and natural features like coastlines).  The old option "canmex"
 #     only used the the relative low-resolution world maps for Canada
 #     and Mexico, and was a bit more primitive.
 #
-#   2024-06-04 (JLS): Updated code to use sf_project() from "sf" package,
+#   2024-06-10 (JLS): Updated code to use sf_project() from "sf" package,
 #     rather than relying on project() from deprecated "rgdal" package. Updated
-#     code formatting.
+#     code formatting.  If user chooses option "canusamex", we load those
+#     boundaries from pre-compiled data included with this package, instead of
+#      calling the old get.canusamex.bds() function to calculate them.
 # ###########################################################
 get.map.lines.M3.proj <- function(file, database="state", units, ...){
 
@@ -70,11 +72,10 @@ get.map.lines.M3.proj <- function(file, database="state", units, ...){
   # Get the coords of the boundary lines in lat/lon.  If the user
   # chooses a database like "state", "world", "usa", etc., then we
   # can get the boundary lines using map() in the "maps" package.  If
-  # the user chooses "canmex", which is not an option for map(), we
-  # call a separate piece of code.
+  # the user chooses "canusamex", which is not an option for map(), we
+  # use the boundaries in the pre-compiled data included in the package.
   if (database == "canusamex"){
-    map.lonlat <- data.frame(get.canusamex.bds())
-    colnames(map.lonlat) <- c("long", "lat")
+    map.lonlat <- canusamex_bds
   }
   else{
     raw.map.lonlat <- map(database, plot=FALSE, resolution=0)
