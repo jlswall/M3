@@ -1,5 +1,18 @@
-# Export all names
-exportPattern(".")
+# Export functions
+export(combine.date.and.time)
+export(decipher.M3.date)
+export(decipher.M3.time)
+export(get.M3.var)
+export(get.coord.for.dimension)
+export(get.datetime.seq)
+export(get.grid.info.M3)
+export(get.map.lines.M3.proj)
+export(get.matrix.all.grid.cell.ctrs)
+export(get.proj.info.M3)
+export(project.M3.1.to.M3.2)
+export(project.M3.to.lonlat)
+export(project.lonlat.to.M3)
+export(var.subset)
 
 # Import all packages listed as Imports or Depends
 import(
