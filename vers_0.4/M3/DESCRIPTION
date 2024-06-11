@@ -9,4 +9,3 @@ Depends: ncdf4,sf,maps,mapdata
 Imports: stats
 Description: Provides functions to read in and manipulate air quality model output from Models3-formatted files.  This format is used by the Community Multiscale Air Quality (CMAQ) model. 
 License: Unlimited
-LazyLoad: yes
