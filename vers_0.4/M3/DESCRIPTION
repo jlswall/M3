@@ -5,7 +5,7 @@ Version: 0.4
 Date: 2024-06-11
 Author: Jenise Swall <jswall@vcu.edu>
 Maintainer: Jenise Swall <jswall@vcu.edu>
-Depends: ncdf4,sf,maps,mapdata
+Depends: R (>= 2.10), ncdf4, sf, maps, mapdata
 Imports: stats
 Description: Provides functions to read in and manipulate air quality model output from Models3-formatted files.  This format is used by the Community Multiscale Air Quality (CMAQ) model. 
 License: Unlimited
