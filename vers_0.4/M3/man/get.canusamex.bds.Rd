@@ -4,7 +4,7 @@
 \title{Obtain map boundaries for Canada, USA, and Mexico}
 
 \description{Obtain map boundaries of Canada, USA, and Mexico, including
-  state boundaries, in longitude/latitude.
+  state boundaries, in longitude and latitude coordinates.
 }
 
 
@@ -15,7 +15,7 @@
 \details{Retrieves a data frame containing the coordinates (longitude and
 latitude) for drawing the boundaries of Canada, USA (including states), and
 Mexico.  This function is intended to be called by the function
-  \code{\link{get.map.lines.M3.proj}}; in practice, it would rarely be called
+  \code{\link{get.map.lines.M3.proj}}; in practice, it should rarely be called
   directly by the user.
 }
 
